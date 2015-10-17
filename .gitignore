@@ -1,0 +1,6 @@
+basic/.DS_Store
+basic/token-atlas
+basic/packer_cache/*
+basic/output-virtualbox-iso/*
+basic/packer_virtualbox-iso_virtualbox.box
+basic/.vagrant/*
