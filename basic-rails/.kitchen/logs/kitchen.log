@@ -1,0 +1,31 @@
+I, [2015-10-29T05:55:51.773058 #16464]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-10-29T05:55:51.773304 #16464] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-29T05:55:51.773326 #16464] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-10-29T05:55:51.773339 #16464] ERROR -- Kitchen: Message: Kitchen YAML file /Users/k2works/Github/hiroshima-arc/ops-packer/basic-rails/.kitchen.yml does not exist.
+E, [2015-10-29T05:55:51.773350 #16464] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-29T05:55:51.773360 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2015-10-29T05:55:51.773371 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:139:in `data'
+E, [2015-10-29T05:55:51.773381 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:118:in `suites'
+E, [2015-10-29T05:55:51.773391 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-10-29T05:55:51.773408 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-10-29T05:55:51.773418 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:104:in `instances'
+E, [2015-10-29T05:55:51.773428 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-10-29T05:55:51.773438 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-10-29T05:55:51.773448 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-10-29T05:55:51.773458 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-10-29T05:55:51.773467 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-10-29T05:55:51.773477 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-10-29T05:55:51.773487 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-10-29T05:55:51.773497 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-10-29T05:55:51.773507 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-10-29T05:55:51.773517 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-10-29T05:55:51.773526 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-10-29T05:55:51.773536 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-10-29T05:55:51.773546 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-10-29T05:55:51.773556 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-10-29T05:55:51.773566 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/gems/test-kitchen-1.3.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-10-29T05:55:51.773575 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/bin/kitchen:23:in `load'
+E, [2015-10-29T05:55:51.773585 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/bin/kitchen:23:in `<main>'
+E, [2015-10-29T05:55:51.773595 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-10-29T05:55:51.773613 #16464] ERROR -- Kitchen: /Users/k2works/.rvm/gems/ruby-2.1.5/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-10-29T05:55:51.773631 #16464] ERROR -- Kitchen: ----------------------

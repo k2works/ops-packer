@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+#export PACKER_LOG=1
+
+eval "$(cat token-atlas)"
+packer push -name k2works/ubuntu14-04-rails-env ubuntu-14.04.3-server-amd64-atlas-rails-env.json

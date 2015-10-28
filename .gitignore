@@ -4,3 +4,10 @@ basic/packer_cache/*
 basic/output-virtualbox-iso/*
 basic/packer_virtualbox-iso_virtualbox.box
 basic/.vagrant/*
+
+basic-rails/.DS_Store
+basic-rails/token-atlas
+basic-rails/packer_cache/*
+basic-rails/output-virtualbox-iso/*
+basic-rails/packer_virtualbox-iso_virtualbox.box
+basic-rails/.vagrant/*
