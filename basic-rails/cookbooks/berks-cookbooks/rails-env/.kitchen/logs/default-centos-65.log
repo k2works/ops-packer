@@ -1,0 +1,177 @@
+I, [2015-10-17T16:32:05.302314 #60845]  INFO -- default-centos-65: -----> Cleaning up any prior instances of <default-centos-65>
+I, [2015-10-17T16:32:05.302451 #60845]  INFO -- default-centos-65: -----> Destroying <default-centos-65>...
+I, [2015-10-17T16:32:05.427326 #60845]  INFO -- default-centos-65: docker: "rm" requires a minimum of 1 argument.
+I, [2015-10-17T16:32:05.427394 #60845]  INFO -- default-centos-65: See 'docker rm --help'.
+I, [2015-10-17T16:32:05.427413 #60845]  INFO -- default-centos-65: 
+I, [2015-10-17T16:32:05.427425 #60845]  INFO -- default-centos-65: Usage:	docker rm [OPTIONS] CONTAINER [CONTAINER...]
+I, [2015-10-17T16:32:05.427436 #60845]  INFO -- default-centos-65: 
+I, [2015-10-17T16:32:05.427466 #60845]  INFO -- default-centos-65: Remove one or more containers
+I, [2015-10-17T16:32:05.428899 #60845]  INFO -- default-centos-65: Finished destroying <default-centos-65> (0m0.13s).
+I, [2015-10-17T16:32:05.429107 #60845]  INFO -- default-centos-65: -----> Testing <default-centos-65>
+I, [2015-10-17T16:32:05.429191 #60845]  INFO -- default-centos-65: -----> Creating <default-centos-65>...
+I, [2015-10-17T16:32:05.575636 #60845]  INFO -- default-centos-65: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+I, [2015-10-17T16:32:05.611122 #60845]  INFO -- default-centos-65: Step 0 : FROM centos:centos6
+I, [2015-10-17T16:32:05.611884 #60845]  INFO -- default-centos-65: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+E, [2015-10-17T16:32:05.623462 #60845] ERROR -- default-centos-65: Create failed on instance <default-centos-65>.
+E, [2015-10-17T16:32:05.623557 #60845] ERROR -- default-centos-65: ------Exception-------
+E, [2015-10-17T16:32:05.623572 #60845] ERROR -- default-centos-65: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-10-17T16:32:05.623581 #60845] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker build - ----
+STDOUT: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+Step 0 : FROM centos:centos6
+STDERR: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+---- End output of docker build - ----
+Ran docker build - returned 1
+E, [2015-10-17T16:32:05.623590 #60845] ERROR -- default-centos-65: ---Nested Exception---
+E, [2015-10-17T16:32:05.623598 #60845] ERROR -- default-centos-65: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-10-17T16:32:05.623606 #60845] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker build - ----
+STDOUT: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+Step 0 : FROM centos:centos6
+STDERR: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+---- End output of docker build - ----
+Ran docker build - returned 1
+E, [2015-10-17T16:32:05.623617 #60845] ERROR -- default-centos-65: ------Backtrace-------
+E, [2015-10-17T16:32:05.623624 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-10-17T16:32:05.623633 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-10-17T16:32:05.623641 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-10-17T16:32:05.623649 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:203:in `execute'
+E, [2015-10-17T16:32:05.623657 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:109:in `build'
+E, [2015-10-17T16:32:05.623677 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:56:in `create'
+E, [2015-10-17T16:32:05.623687 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-10-17T16:32:05.623695 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-10-17T16:32:05.623703 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-10-17T16:32:05.623711 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-10-17T16:32:05.623718 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-10-17T16:32:05.623728 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-17T16:32:05.623736 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-10-17T16:32:05.623744 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-10-17T16:32:05.623752 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-10-17T16:32:05.623759 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-10-17T16:32:05.623767 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-10-17T16:32:05.623775 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-10-17T16:32:05.623782 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-10-17T16:32:05.623790 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:181:in `block in test'
+E, [2015-10-17T16:32:05.623798 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-17T16:32:05.623807 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:177:in `test'
+E, [2015-10-17T16:32:05.623815 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-10-17T16:32:05.623823 #60845] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-10-17T16:32:05.623830 #60845] ERROR -- default-centos-65: ----------------------
+I, [2015-10-17T16:33:28.419353 #61185]  INFO -- default-centos-65: -----> Cleaning up any prior instances of <default-centos-65>
+I, [2015-10-17T16:33:28.419561 #61185]  INFO -- default-centos-65: -----> Destroying <default-centos-65>...
+I, [2015-10-17T16:33:28.543955 #61185]  INFO -- default-centos-65: docker: "rm" requires a minimum of 1 argument.
+I, [2015-10-17T16:33:28.544014 #61185]  INFO -- default-centos-65: See 'docker rm --help'.
+I, [2015-10-17T16:33:28.544048 #61185]  INFO -- default-centos-65: 
+I, [2015-10-17T16:33:28.544066 #61185]  INFO -- default-centos-65: Usage:	docker rm [OPTIONS] CONTAINER [CONTAINER...]
+I, [2015-10-17T16:33:28.544082 #61185]  INFO -- default-centos-65: 
+I, [2015-10-17T16:33:28.544094 #61185]  INFO -- default-centos-65: Remove one or more containers
+I, [2015-10-17T16:33:28.545249 #61185]  INFO -- default-centos-65: Finished destroying <default-centos-65> (0m0.13s).
+I, [2015-10-17T16:33:28.545546 #61185]  INFO -- default-centos-65: -----> Testing <default-centos-65>
+I, [2015-10-17T16:33:28.545625 #61185]  INFO -- default-centos-65: -----> Creating <default-centos-65>...
+I, [2015-10-17T16:33:28.696773 #61185]  INFO -- default-centos-65: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+I, [2015-10-17T16:33:28.735105 #61185]  INFO -- default-centos-65: Step 0 : FROM centos:centos6
+I, [2015-10-17T16:33:28.736224 #61185]  INFO -- default-centos-65: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+E, [2015-10-17T16:33:28.749189 #61185] ERROR -- default-centos-65: Create failed on instance <default-centos-65>.
+E, [2015-10-17T16:33:28.749358 #61185] ERROR -- default-centos-65: ------Exception-------
+E, [2015-10-17T16:33:28.749393 #61185] ERROR -- default-centos-65: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-10-17T16:33:28.749415 #61185] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker build - ----
+STDOUT: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+Step 0 : FROM centos:centos6
+STDERR: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+---- End output of docker build - ----
+Ran docker build - returned 1
+E, [2015-10-17T16:33:28.749572 #61185] ERROR -- default-centos-65: ---Nested Exception---
+E, [2015-10-17T16:33:28.749593 #61185] ERROR -- default-centos-65: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-10-17T16:33:28.749611 #61185] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker build - ----
+STDOUT: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+Step 0 : FROM centos:centos6
+STDERR: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+---- End output of docker build - ----
+Ran docker build - returned 1
+E, [2015-10-17T16:33:28.749630 #61185] ERROR -- default-centos-65: ------Backtrace-------
+E, [2015-10-17T16:33:28.749649 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-10-17T16:33:28.749670 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-10-17T16:33:28.749689 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-10-17T16:33:28.749708 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:203:in `execute'
+E, [2015-10-17T16:33:28.749727 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:109:in `build'
+E, [2015-10-17T16:33:28.749747 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:56:in `create'
+E, [2015-10-17T16:33:28.749765 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-10-17T16:33:28.749784 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-10-17T16:33:28.749826 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-10-17T16:33:28.749848 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-10-17T16:33:28.749868 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-10-17T16:33:28.749886 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-17T16:33:28.749902 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-10-17T16:33:28.749917 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-10-17T16:33:28.749932 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-10-17T16:33:28.749942 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-10-17T16:33:28.749950 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-10-17T16:33:28.749959 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-10-17T16:33:28.749970 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-10-17T16:33:28.749985 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:181:in `block in test'
+E, [2015-10-17T16:33:28.750028 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-17T16:33:28.750053 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:177:in `test'
+E, [2015-10-17T16:33:28.750064 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-10-17T16:33:28.750081 #61185] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-10-17T16:33:28.750103 #61185] ERROR -- default-centos-65: ----------------------
+I, [2015-10-17T16:35:50.269885 #61446]  INFO -- default-centos-65: -----> Cleaning up any prior instances of <default-centos-65>
+I, [2015-10-17T16:35:50.270098 #61446]  INFO -- default-centos-65: -----> Destroying <default-centos-65>...
+I, [2015-10-17T16:35:50.394934 #61446]  INFO -- default-centos-65: docker: "rm" requires a minimum of 1 argument.
+I, [2015-10-17T16:35:50.394996 #61446]  INFO -- default-centos-65: See 'docker rm --help'.
+I, [2015-10-17T16:35:50.395327 #61446]  INFO -- default-centos-65: 
+I, [2015-10-17T16:35:50.395345 #61446]  INFO -- default-centos-65: Usage:	docker rm [OPTIONS] CONTAINER [CONTAINER...]
+I, [2015-10-17T16:35:50.395356 #61446]  INFO -- default-centos-65: 
+I, [2015-10-17T16:35:50.395367 #61446]  INFO -- default-centos-65: Remove one or more containers
+I, [2015-10-17T16:35:50.396324 #61446]  INFO -- default-centos-65: Finished destroying <default-centos-65> (0m0.13s).
+I, [2015-10-17T16:35:50.396980 #61446]  INFO -- default-centos-65: -----> Testing <default-centos-65>
+I, [2015-10-17T16:35:50.397061 #61446]  INFO -- default-centos-65: -----> Creating <default-centos-65>...
+I, [2015-10-17T16:35:50.540871 #61446]  INFO -- default-centos-65: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+I, [2015-10-17T16:35:50.579466 #61446]  INFO -- default-centos-65: Step 0 : FROM centos:centos6
+I, [2015-10-17T16:35:50.580451 #61446]  INFO -- default-centos-65: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+E, [2015-10-17T16:35:50.593706 #61446] ERROR -- default-centos-65: Create failed on instance <default-centos-65>.
+E, [2015-10-17T16:35:50.593825 #61446] ERROR -- default-centos-65: ------Exception-------
+E, [2015-10-17T16:35:50.593844 #61446] ERROR -- default-centos-65: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-10-17T16:35:50.593856 #61446] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker build - ----
+STDOUT: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+Step 0 : FROM centos:centos6
+STDERR: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+---- End output of docker build - ----
+Ran docker build - returned 1
+E, [2015-10-17T16:35:50.593871 #61446] ERROR -- default-centos-65: ---Nested Exception---
+E, [2015-10-17T16:35:50.593884 #61446] ERROR -- default-centos-65: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-10-17T16:35:50.593895 #61446] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker build - ----
+STDOUT: Sending build context to Docker daemon 2.048 kBSending build context to Docker daemon 2.048 kB
+Step 0 : FROM centos:centos6
+STDERR: could not find image: no such id: f6808a3e4d9e80a655ec625e38b869ed8a614611e4d0073aeff23be841c9fcff
+---- End output of docker build - ----
+Ran docker build - returned 1
+E, [2015-10-17T16:35:50.593906 #61446] ERROR -- default-centos-65: ------Backtrace-------
+E, [2015-10-17T16:35:50.593915 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-10-17T16:35:50.593925 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-10-17T16:35:50.593936 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-10-17T16:35:50.593946 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:203:in `execute'
+E, [2015-10-17T16:35:50.593958 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:109:in `build'
+E, [2015-10-17T16:35:50.593977 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/kitchen-docker_cli-0.8.0/lib/kitchen/driver/docker_cli.rb:56:in `create'
+E, [2015-10-17T16:35:50.593985 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-10-17T16:35:50.593994 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-10-17T16:35:50.594002 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-10-17T16:35:50.594011 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-10-17T16:35:50.594035 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-10-17T16:35:50.594045 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-17T16:35:50.594054 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-10-17T16:35:50.594126 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-10-17T16:35:50.594139 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-10-17T16:35:50.594148 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-10-17T16:35:50.594157 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-10-17T16:35:50.594165 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-10-17T16:35:50.594174 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-10-17T16:35:50.594182 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:181:in `block in test'
+E, [2015-10-17T16:35:50.594190 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-17T16:35:50.594199 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:177:in `test'
+E, [2015-10-17T16:35:50.594207 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-10-17T16:35:50.594215 #61446] ERROR -- default-centos-65: /Users/k2works/.rvm/gems/ruby-2.2.0-preview1@rails-env/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-10-17T16:35:50.594224 #61446] ERROR -- default-centos-65: ----------------------

@@ -9,6 +9,7 @@
         "http/.DS_Store",
         "scripts/.DS_store",
         "cookbooks/.DS_store",
+        "berks-cookbooks/.DS_store",
         "packer_cache/*",
         "packer_virtualbox-iso_virtualbox.box",
         "token-atlas",
@@ -40,7 +41,7 @@
         },
         {
             "type": "chef-solo",
-            "cookbook_paths": ["cookbooks"],
+            "cookbook_paths": ["cookbooks","cookbooks/berks-cookbooks"],
             "run_list":  [
               "recipe[rails-env]"
             ]
@@ -87,7 +88,7 @@
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
-                "version": "0.0.1"
+                "version": "0.0.2"
             }
         }]
     ]

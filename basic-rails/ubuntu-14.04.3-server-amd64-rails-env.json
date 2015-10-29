@@ -18,7 +18,7 @@
         },
         {
             "type": "chef-solo",
-            "cookbook_paths": ["cookbooks"],
+            "cookbook_paths": ["cookbooks","cookbooks/berks-cookbooks"],
             "run_list":  [
               "recipe[rails-env]"
             ]
