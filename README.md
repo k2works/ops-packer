@@ -38,7 +38,30 @@ Hiroshima-arcイベント（セミナー・勉強会）参加者が
     vagrant login
     export ATLAS_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxx"    
     packer push -name ATLAS_USERNAME/ATLAS_NAME ubuntu-14.04.3-server-amd64-atlas.json
+    
+## レシピ変更セットアップ手順(basic-rails編)
+    
+1. rails-envのレシピを修正後にTestKitchenを実行して反映を確認する。
+    
+         $ cd basic-rails/cookbooks/rails-env/
+         $ kitchen test ubuntu
+         $ ./setup_for_crate_box.sh 
+         
+1. packerで反映後のイメージを作って確認する。
+         
+         $ cd ../../
+         $ ./create_box
+         $ vagrant up
+         $ vagrant ssh
+                  
+1. ATLASに反映する。
 
+       1. `ubuntu-14.04.3-server-amd64-atlas-rails-env.json`の91行目`"version": "0.x.x"`のバージョンを更新する
+       1. レポジトリをコミットしてプッシュする
+       1. ATLASにプッシュする
+       
+          $ ./push_atlas 
+   
 # 参照
 + [Packer](https://www.packer.io/)
 + [VAGRANT](https://www.vagrantup.com/)

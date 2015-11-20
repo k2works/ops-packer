@@ -1,4 +1,6 @@
 ---
-image: e1c78752fe6e
-container_id: 982d2410f03ce82b25563d92609ab9586a9f2c6d9af52833792c7008369f8efb
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: "/Users/k2works/Github/hiroshima-arc/hiroshima-arc-ops-packer/basic-rails/cookbooks/rails-env/.kitchen/kitchen-vagrant/kitchen-rails-env-default-ubuntu-1404/.vagrant/machines/default/virtualbox/private_key"
 last_action: create
